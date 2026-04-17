@@ -1,4 +1,5 @@
 // main.dart
+import 'package:biblio/pages/sign_in/sign_in_page.dart';
 import 'package:flutter/material.dart';
 import './configs/theme.dart';
 
@@ -18,21 +19,19 @@ class MyApp extends StatelessWidget {
 
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
 
-    print('1 ++++++++++++++++++++++++++++++++');
-
-
-    ThemeData myLightTheme;
+    ThemeData myTheme;
 
     if(isDarkMode){
-       myLightTheme = materialTheme.dark();
+      myTheme = materialTheme.dark();
     }else{
-       myLightTheme = materialTheme.light();
+      myTheme = materialTheme.light();
     }
 
     return MaterialApp(
       title: 'Flutter Demo',
       theme: materialTheme.light(),
       darkTheme: materialTheme.dark(),
+      themeMode: ThemeMode.system,
       home: Scaffold(
         appBar: AppBar(
           title: Text(
@@ -41,11 +40,9 @@ class MyApp extends StatelessWidget {
                 color: colors.primary
               ),
             ),
-          backgroundColor: myLightTheme.colorScheme.tertiaryContainer
+          backgroundColor: myTheme.colorScheme.onSecondary
         ),
-        body: Center(
-          child: Text("hola mundo")
-        ),
+        body: SignInPage(),
       ),
     );
   }
