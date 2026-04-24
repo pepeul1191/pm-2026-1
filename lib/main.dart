@@ -1,4 +1,5 @@
 // main.dart
+import 'package:biblio/pages/profile/profile_page.dart';
 import 'package:biblio/pages/sign_in/sign_in_page.dart';
 import 'package:flutter/material.dart';
 import './configs/theme.dart';
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
             ),
           backgroundColor: myTheme.colorScheme.onSecondary
         ),
-        body: SignInPage(),
+        body: ProfilePage(),
       ),
     );
   }
