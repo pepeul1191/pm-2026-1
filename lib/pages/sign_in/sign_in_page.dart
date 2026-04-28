@@ -21,6 +21,7 @@ class SignInPage extends StatelessWidget {
                   Text('Ingresa esta información'),
                   SizedBox(height: 20,),
                   TextField(
+                    controller: control.username,
                     decoration: InputDecoration(
                       labelText: 'Usuario',
                       prefixIcon: Icon(Icons.person),
@@ -30,6 +31,7 @@ class SignInPage extends StatelessWidget {
                   SizedBox(height: 10,),
                   TextField(
                     obscureText: true,
+                    controller: control.password,
                     decoration: InputDecoration(
                       labelText: 'Contraseña',
                       prefixIcon: Icon(Icons.lock),
@@ -37,10 +39,17 @@ class SignInPage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 10,),
-                  Text('Futuro mensaje',
-                    style: TextStyle(
-                    color: Colors.red,
-                  ),),
+                  Obx(
+                    () => Text(
+                      control.message.value,
+                      style: TextStyle(
+                        color:
+                            control.success.value
+                                ? Theme.of(context).colorScheme.tertiary
+                                : Theme.of(context).colorScheme.error,
+                      ),
+                    ),
+                  ),
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
@@ -50,7 +59,9 @@ class SignInPage extends StatelessWidget {
                           borderRadius: BorderRadius.zero,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        control.login(context);
+                      },
                       child: Text('Ingresar'),
                     ),
                   ),

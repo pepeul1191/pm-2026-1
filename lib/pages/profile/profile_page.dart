@@ -218,12 +218,6 @@ class ProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        resizeToAvoidBottomInset: false,
-        appBar: null,
-        body: _buildBody(context),
-      ),
-    );
+    return _buildBody(context);
   }
 }

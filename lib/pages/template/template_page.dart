@@ -17,7 +17,7 @@ class TemplatePage extends StatelessWidget {
       home: Scaffold(
         resizeToAvoidBottomInset: false,
         appBar: null,
-        body: ,
+        body: _buildBody(context),
       ),
     );
   }

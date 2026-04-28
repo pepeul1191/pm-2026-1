@@ -1,4 +1,5 @@
 // main.dart
+import 'package:biblio/pages/home/home_page.dart';
 import 'package:biblio/pages/profile/profile_page.dart';
 import 'package:biblio/pages/sign_in/sign_in_page.dart';
 import 'package:flutter/material.dart';
@@ -33,18 +34,7 @@ class MyApp extends StatelessWidget {
       theme: materialTheme.light(),
       darkTheme: materialTheme.dark(),
       themeMode: ThemeMode.system,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "Biblio App UL", 
-            style: TextStyle(
-                color: colors.primary
-              ),
-            ),
-          backgroundColor: myTheme.colorScheme.onSecondary
-        ),
-        body: ProfilePage(),
-      ),
+      home: HomePage(),
     );
   }
 }
