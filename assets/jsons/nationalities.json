@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "demonym": "Peruano"
+  },
+  {
+    "id": 2,
+    "demonym": "Argentino"
+  },
+  {
+    "id": 3,
+    "demonym": "Chileno"
+  },
+  {
+    "id": 4,
+    "demonym": "Colombiano"
+  },
+  {
+    "id": 5,
+    "demonym": "Mexicano"
+  },
+  {
+    "id": 6,
+    "demonym": "Español"
+  },
+  {
+    "id": 7,
+    "demonym": "Estadounidense"
+  },
+  {
+    "id": 8,
+    "demonym": "Brasileño"
+  },
+  {
+    "id": 9,
+    "demonym": "Francés"
+  },
+  {
+    "id": 10,
+    "demonym": "Japonés"
+  }
+]

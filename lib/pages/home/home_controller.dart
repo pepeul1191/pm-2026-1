@@ -1,3 +1,4 @@
+import 'package:biblio/services/nationality_services.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController {
@@ -9,4 +10,9 @@ class HomeController extends GetxController {
     selectedIndex.value = index;
   }
 
+  void test(){
+    NationalityServices nationalityServices = NationalityServices();
+
+    nationalityServices.fetchAll();
+  }
 }

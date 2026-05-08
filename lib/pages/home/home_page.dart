@@ -76,6 +76,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     ColorScheme colors = Theme.of(context).colorScheme;
+    control.test();
 
     return Scaffold(
         appBar: AppBar(

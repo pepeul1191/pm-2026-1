@@ -1,0 +1,117 @@
+[
+  {
+    "id": 1,
+    "username": "jperez",
+    "password": "123456",
+    "first_name": "Juan",
+    "last_name": "Pérez",
+    "email": "juan.perez@example.com",
+    "reset_key": null,
+    "status": true,
+    "activation_key": "ACT123",
+    "birth_date": "1995-03-15",
+    "profile_picture": "https://example.com/profiles/jperez.jpg",
+    "sex_id": 1,
+    "nationality_id": 1,
+    "sex": {
+      "id": 1,
+      "name": "Masculino"
+    },
+    "nationality": {
+      "id": 1,
+      "demonym": "Peruano"
+    }
+  },
+  {
+    "id": 2,
+    "username": "mgarcia",
+    "password": "abcdef",
+    "first_name": "María",
+    "last_name": "García",
+    "email": "maria.garcia@example.com",
+    "reset_key": null,
+    "status": true,
+    "activation_key": "ACT456",
+    "birth_date": "1998-07-22",
+    "profile_picture": "https://example.com/profiles/mgarcia.jpg",
+    "sex_id": 2,
+    "nationality_id": 2,
+    "sex": {
+      "id": 2,
+      "name": "Femenino"
+    },
+    "nationality": {
+      "id": 2,
+      "demonym": "Argentina"
+    }
+  },
+  {
+    "id": 3,
+    "username": "crojas",
+    "password": "qwerty",
+    "first_name": "Carlos",
+    "last_name": "Rojas",
+    "email": "carlos.rojas@example.com",
+    "reset_key": "RST789",
+    "status": false,
+    "activation_key": null,
+    "birth_date": "1990-11-10",
+    "profile_picture": null,
+    "sex_id": 1,
+    "nationality_id": 3,
+    "sex": {
+      "id": 1,
+      "name": "Masculino"
+    },
+    "nationality": {
+      "id": 3,
+      "demonym": "Chileno"
+    }
+  },
+  {
+    "id": 4,
+    "username": "alopez",
+    "password": "pass123",
+    "first_name": "Ana",
+    "last_name": "López",
+    "email": "ana.lopez@example.com",
+    "reset_key": null,
+    "status": true,
+    "activation_key": "ACT999",
+    "birth_date": "2001-01-05",
+    "profile_picture": "https://example.com/profiles/alopez.png",
+    "sex_id": 2,
+    "nationality_id": 4,
+    "sex": {
+      "id": 2,
+      "name": "Femenino"
+    },
+    "nationality": {
+      "id": 4,
+      "demonym": "Colombiana"
+    }
+  },
+  {
+    "id": 5,
+    "username": "lmartinez",
+    "password": "secure789",
+    "first_name": "Luis",
+    "last_name": "Martínez",
+    "email": "luis.martinez@example.com",
+    "reset_key": null,
+    "status": true,
+    "activation_key": "ACT777",
+    "birth_date": "1987-09-30",
+    "profile_picture": "https://example.com/profiles/lmartinez.jpg",
+    "sex_id": 1,
+    "nationality_id": 5,
+    "sex": {
+      "id": 1,
+      "name": "Masculino"
+    },
+    "nationality": {
+      "id": 5,
+      "demonym": "Mexicano"
+    }
+  }
+]
